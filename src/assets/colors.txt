@@ -1,0 +1,14 @@
+Colores:
+#FF0C86 Rosa-Cerebro
+#5A2767 Morado-
+
+/* TABLET */
+@media screen and (min-width: 580px) {
+}
+/* PC */
+@media screen and (min-width: 768px) {
+}
+/* LARGE SCREEN */
+@media screen and (min-width: 990px) {
+
+}
