@@ -7,20 +7,20 @@ import Nav from "./components/Nav.vue";
 import HomeView from "./views/HomeView.vue";
 import AboutView from "./views/AboutView.vue";
 import Footer from "./components/Footer.vue";
+import LoginView from "./views/LoginView.vue";
 export default {
   data() {
     return {};
   },
   name: "App",
   components: {
-    HomeView,
     AboutView,
     Nav,
-    Footer
+    Footer,
+    HomeView,
+    LoginView,
   },
 };
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

@@ -1,11 +1,9 @@
 <template>
   <Nav></Nav>
   <div class="about-container">
-    <h1>This is an about page</h1>
+    <h2>Hola desde about</h2>
   </div>
   <Footer></Footer>
-  <router-view></router-view>
-
 </template>
 
 <script>

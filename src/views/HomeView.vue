@@ -1,6 +1,6 @@
 <template>
-  <Nav></Nav>
-  <div id="home" class="home-page">
+  <Nav id="reg"></Nav>
+  <div  class="home-page">
     <section
       data-aos="fade-right"
       data-aos-easing="linear"
@@ -71,7 +71,7 @@
     </section>
   </div>
   <div data-aos="fade-up" class="reg-pag">
-    <a class="reg-pag-link" href="#home"
+    <a class="reg-pag-link" href="#reg"
       ><i class="fa-solid fa-arrow-up"></i
     ></a>
   </div>
@@ -81,6 +81,7 @@
 <script>
 import Nav from "@/components/Nav.vue";
 import Footer from "@/components/Footer.vue";
+import LoginView from "./LoginView.vue";
 export default {
   data() {
     return {
@@ -97,6 +98,7 @@ export default {
   components: {
     Nav,
     Footer,
+    LoginView,
   },
 };
 </script>
