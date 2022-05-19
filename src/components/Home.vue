@@ -106,14 +106,15 @@ export default {
 
 <style lang="scss" scoped>
 .background{
-  background-image: url("@/assets/window-5850628_640.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("@/assets/backgorund.png");
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   background-attachment: fixed;
   width: 100%;
   height: 100vh;
 }
+
 
 .home-page {
   width: 100%;

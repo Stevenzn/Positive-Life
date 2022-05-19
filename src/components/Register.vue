@@ -2,23 +2,18 @@
   <div class="form">
     <h2>Register</h2>
     <form @submit.prevent="submit">
-        
-      <input
-        type="text"
-        placeholder="Username"
-        v-model="username"
-        required
-      />
-      <input
-        type="password"
-        placeholder="Password"
-        v-model="password"
-        required
-      />
+      <input type="text" placeholder="Nombres" />
+      <input type="text" placeholder="Apellidos" />
+      <input type="number" placeholder="Numero" />
+      <input type="text" placeholder="Pais" />
+      <input type="text" placeholder="Depatamento" />
+      <input type="text" placeholder="Ciudad" />
+      <select name="Seleccionar" id="">
+        <option value="">Selecciona una opcion</option>
+        <option value="">Eres perra?1</option>
+        <option value="">Eres perra?2</option>
+      </select>
       <button type="submit">Register</button>
-        <p class="message">
-            Already registered? <router-link to="/login">Login</router-link>
-        </p>
     </form>
   </div>
 </template>
@@ -41,8 +36,12 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-h2{
+<style lang="scss" >
+select{
+  margin: 1rem 0;
+  width: 60%;
+}
+/* h2{
     font-size: 2rem;
     font-weight: bold;
     color: var(--rosado);
@@ -53,7 +52,6 @@ h2{
   margin: 1rem auto 12rem;
   padding: 45px;
   text-align: center;
-  /* box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24); */
 }
 .form input {
   font-family: "Roboto", sans-serif;
@@ -94,5 +92,5 @@ h2{
 
 .message a:hover {
   text-decoration: underline;
-}
+} */
 </style>

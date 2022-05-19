@@ -31,7 +31,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 h2{
     font-size: 2rem;
     font-weight: bold;
@@ -43,18 +43,23 @@ h2{
   margin: 1rem auto 12rem;
   padding: 45px;
   text-align: center;
-  /* box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24); */
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 .form input {
   font-family: "Roboto", sans-serif;
   outline: 0;
   width: 100%;
   border: none;
-  border-bottom: 2px solid var(--rosado);
+  border-bottom: 2px solid #f69fcb;
   margin: 0 0 15px;
   padding: 15px;
   font-size: 14px;
 }
+
+.form input:focus{
+border-bottom: var(--rosado) 2px solid;
+}
+
 .form button {
   text-transform: uppercase;
   outline: 0;
@@ -67,6 +72,7 @@ h2{
   -webkit-transition: all 0.3 ease;
   transition: all 0.3 ease;
   cursor: pointer;
+  border-radius:0.5rem;
 }
 .form button:hover,
 .form button:active,
