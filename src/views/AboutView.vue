@@ -91,6 +91,9 @@
     </div>
     <Card></Card>
   </article>
+   <div data-aos="flip-up" class="reg-pag">
+    <a class="reg-pag-link" href="#reg"><i class="fa-solid fa-arrow-up"></i></a>
+  </div>
   <Footer></Footer>
 </template>
 
@@ -106,7 +109,7 @@ export default {
     Footer,
     Home,
     Card,
-  },
+},
 };
 </script>
 

@@ -1,15 +1,25 @@
 <template>
   <div class="form">
-      <h2>Log In</h2>
-    <form @submit.prevent="submit" class="login-form">
-      <input required v-model="username" type="text" placeholder="Username" />
-      <input required v-model="password" type="password" placeholder="Password" />
-      <button>login</button>
-      <p class="message">Not registered? <router-link to="/register">Create Account</router-link> </p>
+    <h2>Register</h2>
+    <form @submit.prevent="submit">
+        
+      <input
+        type="text"
+        placeholder="Username"
+        v-model="username"
+        required
+      />
+      <input
+        type="password"
+        placeholder="Password"
+        v-model="password"
+        required
+      />
+      <button type="submit">Register</button>
+        <p class="message">
+            Already registered? <router-link to="/login">Login</router-link>
+        </p>
     </form>
-  </div>
-   <div data-aos="flip-up" class="reg-pag">
-    <a class="reg-pag-link" href="#reg"><i class="fa-solid fa-arrow-up"></i></a>
   </div>
 </template>
 

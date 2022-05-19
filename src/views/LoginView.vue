@@ -17,7 +17,7 @@ export default {
     components: {
     Nav,
     Footer,
-    Login
+    Login,
 },
 }
 </script>
