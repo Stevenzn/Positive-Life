@@ -1,21 +1,24 @@
 <template>
   <Nav></Nav>
-  <h2>hola desde el login</h2>
+  <Login></Login>
   <Footer></Footer>
 </template>
 
 <script>
 import Nav from "@/components/Nav.vue";
 import Footer from "@/components/Footer.vue";
+import Login from "@/components/Login.vue";
+
 export default {
     data() {
         return {};
     },
     name: "login",
     components: {
-        Nav,
-        Footer,
-    },
+    Nav,
+    Footer,
+    Login
+},
 }
 </script>
 
